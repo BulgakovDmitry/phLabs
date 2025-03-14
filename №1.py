@@ -82,7 +82,7 @@ delta_P_fit = k * delta_T_fit + b
 plt.figure(figsize=(8, 6))
 
 # Точки с вертикальными погрешностями (но без легенды)
-plt.errorbar(delta_T, delta_P, yerr=delta_P_err, fmt='o',
+plt.errorbar(delta_T, delta_P, yerr=delta_P_err, xerr=0.1, fmt='o',
              ecolor='black', capsize=3, label='_nolegend_')
 
 # Фиктивный объект, чтобы в легенде была метка "Эксперимент"
